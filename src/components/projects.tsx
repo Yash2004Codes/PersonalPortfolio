@@ -53,10 +53,12 @@ export function Projects() {
                     <Card key={project.title} className="flex flex-col overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl">
                       <CardHeader>
                         <div className="aspect-video relative mb-4">
-                           <Image src={project.image} alt={project.title} layout="fill" objectFit="cover" className="rounded-t-lg" data-ai-hint={project.dataAiHint} />
+                           <Image src={project.image} alt={project.title} fill objectFit="cover" className="rounded-t-lg" data-ai-hint={project.dataAiHint} />
                         </div>
                         <CardTitle className="font-headline text-2xl">{project.title}</CardTitle>
-                        <CardDescription>{project.description}</CardDescription>
+                        <CardDescription>
+                          <div>{project.description}</div>
+                        </CardDescription>
                       </CardHeader>
                       <CardContent className="flex-grow">
                          <div className="flex flex-wrap gap-2">
