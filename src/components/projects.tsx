@@ -57,7 +57,7 @@ export function Projects() {
                         </div>
                         <CardTitle className="font-headline text-2xl">{project.title}</CardTitle>
                         <CardDescription>
-                          <div>{project.description}</div>
+                          {project.description}
                         </CardDescription>
                       </CardHeader>
                       <CardContent className="flex-grow">
