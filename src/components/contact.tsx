@@ -7,30 +7,41 @@ import { SectionHeading } from "./section-heading";
 import { Github, Linkedin, Twitter, Mail } from "lucide-react";
 import Link from "next/link";
 import { Label } from "./ui/label";
+import { useEffect, useState } from "react";
 
 export function Contact() {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
     return (
         <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-black/10">
             <div className="container mx-auto px-4 md:px-6">
                 <SectionHeading id="contact" title="Get In Touch" subtitle="I'm open to new opportunities and collaborations." />
                 <div className="grid gap-12 md:grid-cols-2 max-w-5xl mx-auto">
-                    <form className="space-y-4">
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div className="space-y-2">
-                                <Label htmlFor="name">Name</Label>
-                                <Input id="name" placeholder="Your Name" />
+                    {isClient ? (
+                        <form className="space-y-4">
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div className="space-y-2">
+                                    <Label htmlFor="name">Name</Label>
+                                    <Input id="name" placeholder="Your Name" />
+                                </div>
+                                <div className="space-y-2">
+                                    <Label htmlFor="email">Email</Label>
+                                    <Input id="email" type="email" placeholder="your@email.com" />
+                                </div>
                             </div>
                             <div className="space-y-2">
-                                <Label htmlFor="email">Email</Label>
-                                <Input id="email" type="email" placeholder="your@email.com" />
+                                <Label htmlFor="message">Message</Label>
+                                <Textarea id="message" placeholder="Your message..." rows={5} />
                             </div>
-                        </div>
-                        <div className="space-y-2">
-                            <Label htmlFor="message">Message</Label>
-                            <Textarea id="message" placeholder="Your message..." rows={5} />
-                        </div>
-                        <Button type="submit" className="w-full">Send Message</Button>
-                    </form>
+                            <Button type="submit" className="w-full">Send Message</Button>
+                        </form>
+                    ) : (
+                        <div className="space-y-4 h-[356px] animate-pulse bg-secondary rounded-lg" />
+                    )}
                     <div className="space-y-6">
                         <div>
                             <h3 className="text-2xl font-bold font-headline">Contact Details</h3>
