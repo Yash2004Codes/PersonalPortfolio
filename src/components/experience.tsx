@@ -4,15 +4,21 @@ import { Badge } from '@/components/ui/badge';
 const experiences = [
   {
     role: "Embedded C Developer Intern",
-    company: "Upcoming Opportunity",
-    period: "Starting May 2025",
-    description: "Joining a team to develop and test embedded software solutions, focusing on C programming for low-level systems and hardware interaction.",
+    company: "Smowcode",
+    period: "Present",
+    description: "Contributing to the development and testing of embedded software solutions, with a focus on C programming and hardware interaction.",
+  },
+   {
+    role: "Research Paper Publication (In Progress)",
+    company: "International Journal of Computer Applications (IJCA)",
+    period: "Ongoing",
+    description: "Currently authoring a research paper on Data Encryption Standard (DES) for publication, contributing to the field of cryptography.",
   },
   {
     role: "Computer Engineering Student",
     company: "Sardar Patel Institute of Technology (SPIT)",
-    period: "2022 - Present",
-    description: "Third-year undergraduate pursuing a B.Tech in Computer Engineering. Coursework includes Data Structures, Algorithms, Computer Architecture, and Operating Systems.",
+    period: "2023 - Present",
+    description: "Second-year undergraduate pursuing a B.Tech in Computer Engineering. Coursework includes Data Structures, Algorithms, Computer Architecture, and Operating Systems.",
   },
 ];
 

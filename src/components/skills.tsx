@@ -5,12 +5,11 @@ import { SectionHeading } from './section-heading';
 import { useEffect, useState } from 'react';
 
 const skills = [
-  { name: 'React & Next.js', value: 95 },
-  { name: 'TypeScript', value: 90 },
-  { name: 'UI/UX Design (Figma)', value: 85 },
-  { name: 'Node.js & Express', value: 80 },
-  { name: 'Database (SQL & NoSQL)', value: 75 },
-  { name: 'GenAI Integration', value: 70 },
+  { name: 'React & React Native', value: 90 },
+  { name: 'JavaScript, HTML & CSS', value: 95 },
+  { name: 'Embedded C', value: 85 },
+  { name: 'Python', value: 80 },
+  { name: 'Machine Learning', value: 75 },
 ];
 
 export function Skills() {
