@@ -8,13 +8,13 @@ export function Hero() {
       <div className="container mx-auto px-4 md:px-6 text-center">
         <div className="max-w-3xl mx-auto flex flex-col items-center space-y-6">
           <div className="inline-block rounded-lg bg-secondary px-3 py-1 text-sm">
-            Creative Developer & Designer
+            Computer Engineering Student
           </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-headline tracking-tighter">
-            Jane Doe
+            Yash Lalit Sharma
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl">
-            I specialize in building beautiful, accessible, and user-friendly web experiences. Passionate about clean code, delightful design, and the creative potential of technology.
+            A third-year Computer Engineering student at SPIT. Passionate about embedded systems, C programming, and solving complex problems.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 w-full max-w-sm">
             <Button asChild size="lg" className="w-full sm:w-auto">
