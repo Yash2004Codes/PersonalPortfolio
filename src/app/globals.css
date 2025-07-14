@@ -4,34 +4,34 @@
 
 @keyframes move-bg {
   0% {
-    background-position: 0 0, 0 0;
+    background-position: 0 0;
   }
   100% {
-    background-position: 100px 100px, 100px 100px;
+    background-position: 100px 100px;
   }
 }
 
 @layer base {
   :root {
-    --background: 212 28% 9%;
+    --background: 220 40% 5%;
     --foreground: 210 20% 98%;
-    --card: 212 28% 13%;
+    --card: 220 40% 10%;
     --card-foreground: 210 20% 98%;
-    --popover: 212 28% 9%;
+    --popover: 220 40% 5%;
     --popover-foreground: 210 20% 98%;
-    --primary: 212 92% 59%;
+    --primary: 217 91% 60%;
     --primary-foreground: 210 20% 98%;
-    --secondary: 212 12% 23%;
+    --secondary: 215 28% 17%;
     --secondary-foreground: 210 20% 98%;
-    --muted: 212 12% 23%;
+    --muted: 215 28% 17%;
     --muted-foreground: 210 20% 80%;
-    --accent: 212 12% 23%;
+    --accent: 215 28% 17%;
     --accent-foreground: 210 20% 98%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 20% 98%;
-    --border: 212 12% 23%;
-    --input: 212 12% 23%;
-    --ring: 212 92% 59%;
+    --border: 215 28% 20%;
+    --input: 215 28% 20%;
+    --ring: 217 91% 60%;
     --radius: 0.5rem;
   }
 
@@ -41,6 +41,7 @@
 
   body {
     @apply bg-background text-foreground;
+    background-color: hsl(var(--background));
   }
 
   section {
