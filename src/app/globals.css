@@ -2,36 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes move-bg {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: 100px 100px;
-  }
-}
-
 @layer base {
   :root {
-    --background: 220 40% 5%;
+    --background: 240 10% 4%;
     --foreground: 210 20% 98%;
-    --card: 220 40% 10%;
+    --card: 240 10% 8%;
     --card-foreground: 210 20% 98%;
-    --popover: 220 40% 5%;
+    --popover: 240 10% 4%;
     --popover-foreground: 210 20% 98%;
-    --primary: 217 91% 60%;
+    --primary: 220 80% 60%;
     --primary-foreground: 210 20% 98%;
-    --secondary: 215 28% 17%;
+    --secondary: 220 15% 15%;
     --secondary-foreground: 210 20% 98%;
-    --muted: 215 28% 17%;
-    --muted-foreground: 210 20% 80%;
-    --accent: 215 28% 17%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 210 20% 70%;
+    --accent: 220 15% 15%;
     --accent-foreground: 210 20% 98%;
     --destructive: 0 63% 31%;
     --destructive-foreground: 210 20% 98%;
-    --border: 215 28% 20%;
-    --input: 215 28% 20%;
-    --ring: 217 91% 60%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 220 80% 60%;
     --radius: 0.5rem;
   }
 
