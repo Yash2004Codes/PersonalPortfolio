@@ -1,6 +1,7 @@
+
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -43,6 +44,11 @@ const projects = [
 
 export function Projects() {
     const [open, setOpen] = useState(false);
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
 
     return (
         <section className="w-full py-12 md:py-24 lg:py-32 bg-white dark:bg-black/10">
@@ -83,23 +89,25 @@ export function Projects() {
                    ))}
                 </div>
                 <div className="text-center mt-16">
-                    <Dialog open={open} onOpenChange={setOpen}>
-                        <DialogTrigger asChild>
-                            <Button size="lg" variant="default">
-                                <Sparkles className="mr-2 h-5 w-5" />
-                                Generate Project Description with AI
-                            </Button>
-                        </DialogTrigger>
-                        <DialogContent className="sm:max-w-2xl">
-                            <DialogHeader>
-                                <DialogTitle className="font-headline text-2xl">Generate Project Description</DialogTitle>
-                                <DialogDescription>
-                                    Fill in your project details and let our AI craft a compelling description for you.
-                                </DialogDescription>
-                            </DialogHeader>
-                            <GenerateDescriptionForm />
-                        </DialogContent>
-                    </Dialog>
+                    {isClient && (
+                        <Dialog open={open} onOpenChange={setOpen}>
+                            <DialogTrigger asChild>
+                                <Button size="lg" variant="default">
+                                    <Sparkles className="mr-2 h-5 w-5" />
+                                    Generate Project Description with AI
+                                </Button>
+                            </DialogTrigger>
+                            <DialogContent className="sm:max-w-2xl">
+                                <DialogHeader>
+                                    <DialogTitle className="font-headline text-2xl">Generate Project Description</DialogTitle>
+                                    <DialogDescription>
+                                        Fill in your project details and let our AI craft a compelling description for you.
+                                    </DialogDescription>
+                                </DialogHeader>
+                                <GenerateDescriptionForm />
+                            </DialogContent>
+                        </Dialog>
+                    )}
                 </div>
             </div>
         </section>
