@@ -17,7 +17,7 @@ export function Header() {
         <div className="mr-auto flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <UserCircle className="h-7 w-7 text-primary" />
-            <span className="font-bold text-lg font-headline">Persona</span>
+            <span className="font-bold text-lg font-headline">Yash Lalit Sharma</span>
           </Link>
         </div>
         <nav className="hidden md:flex items-center space-x-6 text-sm font-medium">
