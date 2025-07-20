@@ -4,9 +4,7 @@
 import { getAboutMeResponse } from '@/ai/flows/about-me-flow';
 import { z } from 'zod';
 
-const formSchema = z.object({
-  question: z.string().min(5, "Question must be at least 5 characters."),
-});
+const formSchema = z.string().min(5, "Question must be at least 5 characters.");
 
 type State = {
   response: string;
@@ -14,10 +12,10 @@ type State = {
 };
 
 export async function handleAskAboutMe(prevState: State, formData: FormData): Promise<State> {
-    const question = formData.get('question');
+    const question = formData.get('question') as string;
     try {
-        const validatedData = formSchema.parse({ question });
-        const result = await getAboutMeResponse(validatedData.question);
+        const validatedQuestion = formSchema.parse(question);
+        const result = await getAboutMeResponse(validatedQuestion);
         return {
             response: result,
             error: null,
