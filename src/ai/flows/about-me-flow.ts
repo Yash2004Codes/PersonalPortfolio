@@ -55,6 +55,6 @@ Here is information about Yash:
 
 Now, please answer the following question about Yash:
 
-Question: {{prompt}}
+Question: {{{prompt}}}
 `,
 });
