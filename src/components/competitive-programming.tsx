@@ -32,7 +32,7 @@ export function CompetitiveProgramming() {
              <Card key={index} className="flex flex-col text-center items-center justify-center p-6 hover:shadow-lg hover:-translate-y-1 transition-transform duration-200">
                 <CardHeader className="flex flex-col items-center">
                     <div className="mb-4">
-                      <Image src={profile.icon} alt={`${profile.platform} logo`} width={64} height={64} className="h-16 w-16 object-contain" />
+                      <Image src={profile.icon} alt={`${profile.platform} logo`} width={80} height={80} className="h-20 w-20 object-contain" />
                     </div>
                     <CardTitle className="font-headline">{profile.platform}</CardTitle>
                 </CardHeader>
