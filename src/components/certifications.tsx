@@ -11,14 +11,14 @@ const certifications = [
     issuer: "Internshala Trainings",
     date: "April 2025",
     CertificateId:"3mq5i9l6ktm",
-    Trained:"complete Nodejs"
+    Trained:"Trained in complete Nodejs"
   },
    {
     title: "Certified Web Devloper",
     issuer: "Internshala Trainings",
     date: "April 2025",
     CertificateId:"agu19w03fqf",
-    Trained:"REACT,Javascript,HTML,CSS,PHP,MySQL"
+    Trained:"Trained in react,javascript,html,css,php,mysql"
 
   },
 ];
@@ -30,7 +30,7 @@ export function Certifications() {
         <SectionHeading id="certifications" title="Certifications" subtitle="My professional credentials and qualifications." />
         <div className="grid gap-8 md:grid-cols-2 max-w-5xl mx-auto">
           {certifications.map((cert, index) => (
-            <Card key={index}>
+            <Card key={index} className="transition-transform duration-200 hover:-translate-y-1 hover:shadow-lg">
                 <CardHeader>
                     <CardTitle className='font-headline'>{cert.title}</CardTitle>
                     <CardDescription>{cert.issuer}</CardDescription>
