@@ -16,7 +16,7 @@ const projects = [
    {
     title: 'Kaggle Data Science Competition : Binary Rainfall Prediction',
     description: 'Achieved my best Rank of 2072 among thousands of ML enthusiasts worldwide in this self-directed project.',
-    image: 'https://placehold.co/600x400.png',
+    image: '/header.png',
     tags: ['React', 'Javascript', 'Python', 'Collab', 'Flask', 'Netlify'],
     liveUrl: 'https://rainfallprediction.netlify.app/',
     repoUrl: 'https://github.com/Yash2004Codes/Rainfall_prediction',
