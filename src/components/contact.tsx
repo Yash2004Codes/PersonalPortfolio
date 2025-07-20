@@ -52,7 +52,7 @@ export function Contact() {
                         <div className="space-y-4">
                             <div className="flex items-center gap-4">
                                <Mail className="h-6 w-6 text-primary"/>
-                               <a href="mailto:yashjiakol@gmail.com" className="hover:underline">yashjiakol@gmail.com</a>
+                               <a href="mailto:yashjiakola@gmail.com" className="hover:underline">yashjiakola@gmail.com</a>
                             </div>
                         </div>
                         <div>
