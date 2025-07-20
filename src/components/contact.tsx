@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { SectionHeading } from "./section-heading";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import { Label } from "./ui/label";
 import { useEffect, useState } from "react";
@@ -54,6 +54,10 @@ export function Contact() {
                                <Mail className="h-6 w-6 text-primary"/>
                                <a href="mailto:yashjiakola@gmail.com" className="hover:underline">yashjiakola@gmail.com</a>
                             </div>
+                             <div className="flex items-center gap-4">
+                               <Mail className="h-6 w-6 text-primary"/>
+                               <a href="mailto:yash.sharma23@spit.ac.in" className="hover:underline">yash.sharma23@spit.ac.in</a>
+                            </div>
                         </div>
                         <div>
                           <h3 className="text-2xl font-bold font-headline">Find me on</h3>
@@ -63,9 +67,6 @@ export function Contact() {
                               </Button>
                               <Button asChild variant="outline" size="icon">
                                   <Link href="#" target="_blank"><Linkedin className="h-5 w-5" /><span className="sr-only">LinkedIn</span></Link>
-                              </Button>
-                              <Button asChild variant="outline" size="icon">
-                                  <Link href="#" target="_blank"><Twitter className="h-5 w-5" /><span className="sr-only">Twitter</span></Link>
                               </Button>
                           </div>
                         </div>
