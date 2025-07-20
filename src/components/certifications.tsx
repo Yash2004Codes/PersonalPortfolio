@@ -7,18 +7,19 @@ import { ArrowUpRight } from 'lucide-react';
 
 const certifications = [
   {
-    title: "Placeholder Certification",
-    issuer: "Awesome Certificate Authority",
-    date: "Jan 2024",
-    url: "#",
-    description: "This is a placeholder for a great certification you have earned. You can describe what you learned here."
+    title: "Certified in Nodejs",
+    issuer: "Internshala Trainings",
+    date: "April 2025",
+    CertificateId:"3mq5i9l6ktm",
+    Trained:"complete Nodejs"
   },
    {
-    title: "Another Great Certificate",
-    issuer: "Tech University",
-    date: "Dec 2023",
-    url: "#",
-    description: "This is another placeholder for a certification. Describe the skills and knowledge gained."
+    title: "Certified Web Devloper",
+    issuer: "Internshala Trainings",
+    date: "April 2025",
+    CertificateId:"agu19w03fqf",
+    Trained:"REACT,Javascript,HTML,CSS,PHP,MySQL"
+
   },
 ];
 
@@ -36,14 +37,10 @@ export function Certifications() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                     <Badge variant="outline">{cert.date}</Badge>
-                    <p className="text-muted-foreground">{cert.description}</p>
+                    <p className="text-muted-foreground">{cert.Trained}</p>
                 </CardContent>
                 <CardFooter>
-                    <Button asChild variant="secondary">
-                        <Link href={cert.url} target="_blank" rel="noopener noreferrer">
-                            View Credential <ArrowUpRight className="ml-2 h-4 w-4" />
-                        </Link>
-                    </Button>
+
                 </CardFooter>
             </Card>
           ))}
