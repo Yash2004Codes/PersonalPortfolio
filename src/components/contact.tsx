@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { SectionHeading } from "./section-heading";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 import Link from "next/link";
 import { Label } from "./ui/label";
 import { useEffect, useState } from "react";
@@ -58,15 +58,19 @@ export function Contact() {
                                <Mail className="h-6 w-6 text-primary"/>
                                <a href="mailto:yash.sharma23@spit.ac.in" className="hover:underline">yash.sharma23@spit.ac.in</a>
                             </div>
+                             <div className="flex items-center gap-4">
+                               <Phone className="h-6 w-6 text-primary"/>
+                               <a href="tel:+918657378372" className="hover:underline">+91 8657378372</a>
+                            </div>
                         </div>
                         <div>
                           <h3 className="text-2xl font-bold font-headline">Find me on</h3>
                           <div className="flex space-x-4 mt-4">
                               <Button asChild variant="outline" size="icon">
-                                  <Link href="#" target="_blank"><Github className="h-5 w-5" /><span className="sr-only">GitHub</span></Link>
+                                  <Link href="https://github.com/Yash2004Codes" target="_blank"><Github className="h-5 w-5" /><span className="sr-only">GitHub</span></Link>
                               </Button>
                               <Button asChild variant="outline" size="icon">
-                                  <Link href="#" target="_blank"><Linkedin className="h-5 w-5" /><span className="sr-only">LinkedIn</span></Link>
+                                  <Link href="https://www.linkedin.com/in/yash-lalit-sharma/" target="_blank"><Linkedin className="h-5 w-5" /><span className="sr-only">LinkedIn</span></Link>
                               </Button>
                           </div>
                         </div>

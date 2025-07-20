@@ -3,22 +3,34 @@ import { Badge } from '@/components/ui/badge';
 
 const experiences = [
   {
-    role: "Embedded C Developer Intern",
+    role: "Embedded C Software Developer Intern",
     company: "Smowcode",
-    period: "Present",
-    description: "Contributing to the development and testing of embedded software solutions, with a focus on C programming and hardware interaction.",
+    period: "May-Present",
+    description: "Worked on creating application level libraries for UART & DMA in Embedded C for STM32 MCU",
   },
    {
     role: "Research Paper Publication (In Progress)",
     company: "International Journal of Computer Applications (IJCA)",
     period: "Ongoing",
-    description: "Currently authoring a research paper on Data Encryption Standard (DES) for publication, contributing to the field of cryptography.",
+    description: "Currently authoring a research paper on Double Ended Selection Sort(DESS) for publication.Revising for re-submission",
+  },
+  {
+    role: "Building a Mental Health Platform(In Progress,MVP ready)",
+    company: "FeelFree.com",
+    period: "June-Present",
+    description: "Currently building a online platfrom where user can anonymously post their mental health problems freely and seek advice and support",
+  },
+  {
+    role: "Building a platform for Students finding Hostel/PGs(In Progress,MVP ready)",
+    company: "CollegeRooms.com",
+    period: "June-Present",
+    description: "Currently building a online platfrom where students can find Hostels/PG etc easily without having tension of paying money to brokers ,saving time & money.Profitable for both students & Room owners",
   },
   {
     role: "Computer Engineering Student",
     company: "Sardar Patel Institute of Technology (SPIT)",
     period: "2023 - Present",
-    description: "Second-year undergraduate pursuing a B.Tech in Computer Engineering. Coursework includes Data Structures, Algorithms, Computer Architecture, and Operating Systems.",
+    description: "Second-year undergraduate pursuing a B.Tech in Computer Engineering. Coursework includes Data Structures, Algorithms, Computer Networks and Operating Systems.",
   },
 ];
 
