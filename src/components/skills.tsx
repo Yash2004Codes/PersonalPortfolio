@@ -2,7 +2,7 @@
 'use client';
 
 import { SectionHeading } from './section-heading';
-import { Cpu, Code, Wind, Database, BrainCircuit, Bot, CodeXml, GitBranch, Terminal, Sparkles } from 'lucide-react';
+import { Cpu, Code, Wind, Database, BrainCircuit, Bot, CodeXml, GitBranch, Terminal, Sparkles, Users } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 const skills = [
@@ -31,6 +31,7 @@ const skills = [
   { name: 'Gemini API', icon: <Bot className="h-8 w-8" /> },
   { name: 'Prompt Engineering', icon: <Sparkles className="h-8 w-8" /> },
   { name: 'Linux', icon: <Terminal className="h-8 w-8" /> },
+  { name: 'Soft Skills', icon: <Users className="h-8 w-8" /> },
 ];
 
 export function Skills() {
