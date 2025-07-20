@@ -9,20 +9,12 @@ const socialWork = [
     title: "YouTuber",
     organization: "YouTube",
     date: "Jan 2025",
-    description: "I share my knowledge with others on YouTube.Till now have uploaded 4 videos,Will be uploading more",
+    description: "I share my knowledge with others on YouTube.Till now have uploaded 4 videos,Will be uploading more.click on the image to get to my channel",
     image: "/YT.png",
-    url: "https://www.youtube.com/@YLSTechTV",
+    url: "https://www.youtube.com/@yashsharma-n3w7z",
     dataAiHint: "community event"
   },
-   {
-    title: "Voluntering",
-    organization: "Bandra East Community Centre (BECC)",
-    date: "Sep 2024",
-    description: "Voluentered every sunday for 8 weeks to teach Basic Web Devlopment to students",
-    image: "https://placehold.co/600x400.png",
-    dataAiHint: "nature environment"
-  },
-];
+] 
 
 export function SocialWork() {
   return (
