@@ -8,7 +8,7 @@
  */
 
 import {ai} from '@/ai/genkit';
-import {z} from 'genkit';
+import {z} from 'zod';
 
 export async function getAboutMeResponse(question: string): Promise<string> {
     const { output } = await aboutMePrompt({ question });
