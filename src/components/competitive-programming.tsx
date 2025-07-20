@@ -11,7 +11,7 @@ const profiles = [
     username: "peaceful_WarriorYash",
     url: "https://codeforces.com/profile/peaceful_warriorYash",
     stats: "max rated:876",
-    icon: "/codeforces.jpg"
+    icon: "/CF.jpg"
   },
    {
     platform: "GfG",
@@ -31,8 +31,8 @@ export function CompetitiveProgramming() {
           {profiles.map((profile, index) => (
              <Card key={index} className="flex flex-col text-center items-center justify-center p-6 hover:shadow-lg hover:-translate-y-1 transition-transform duration-200">
                 <CardHeader className="flex flex-col items-center">
-                    <div className="text-primary mb-4">
-                      <Image src={profile.icon} alt={`${profile.platform} logo`} width={32} height={32} className="h-8 w-8" />
+                    <div className="mb-4">
+                      <Image src={profile.icon} alt={`${profile.platform} logo`} width={64} height={64} className="h-16 w-16 object-contain" />
                     </div>
                     <CardTitle className="font-headline">{profile.platform}</CardTitle>
                 </CardHeader>
