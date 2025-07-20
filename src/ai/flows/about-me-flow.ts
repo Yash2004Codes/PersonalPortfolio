@@ -10,14 +10,18 @@
 import {ai} from '@/ai/genkit';
 import {z} from 'zod';
 
+const AboutMeInputSchema = z.object({
+  question: z.string(),
+});
+
 export async function getAboutMeResponse(question: string): Promise<string> {
-    const { output } = await aboutMePrompt(question);
+    const { output } = await aboutMeFlow({ question });
     return output!;
 }
 
 const aboutMePrompt = ai.definePrompt({
   name: 'aboutMePrompt',
-  input: { schema: z.string() },
+  input: { schema: AboutMeInputSchema },
   output: { schema: z.string() },
   prompt: `You are a helpful AI assistant representing Yash Lalit Sharma. Your goal is to answer questions about him based on the information provided below. Keep your answers concise, professional, and friendly.
 
@@ -55,6 +59,18 @@ Here is information about Yash:
 
 Now, please answer the following question about Yash:
 
-Question: {{{prompt}}}
+Question: {{{question}}}
 `,
 });
+
+const aboutMeFlow = ai.defineFlow(
+  {
+    name: 'aboutMeFlow',
+    inputSchema: AboutMeInputSchema,
+    outputSchema: z.string(),
+  },
+  async (input) => {
+    const { output } = await aboutMePrompt(input);
+    return output!;
+  }
+);
