@@ -13,7 +13,7 @@ import { SectionHeading } from './section-heading';
 const projects = [
    {
     title: 'Kaggle Data Science Competition : Binary Rainfall Prediction',
-    description: 'Achieved my best Rank of 2072 among thousands of ML enthusiasts worldwide in this self-directed project.',
+    description: 'Achieved my best Rank of 2072 among ML enthusiasts worldwide in this self-directed project.',
     image: '/header.png',
     tags: ['React', 'Javascript', 'Python', 'Collab', 'Flask', 'Netlify'],
     liveUrl: 'https://rainfallprediction.netlify.app/',
