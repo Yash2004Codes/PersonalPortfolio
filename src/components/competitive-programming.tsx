@@ -11,14 +11,14 @@ const profiles = [
     username: "peaceful_WarriorYash",
     url: "https://codeforces.com/profile/peaceful_warriorYash",
     stats: "max rated:876",
-    icon: "/CF.jpg"
+    icon: "https://placehold.co/150x150.png"
   },
    {
     platform: "GfG",
     username: "yashjivdn1",
     url: "https://www.geeksforgeeks.org/user/yashjivdn1/",
     stats: "solved 70+ problems",
-    icon: "/gfg.jpg"
+    icon: "https://placehold.co/150x150.png"
   }
 ];
 

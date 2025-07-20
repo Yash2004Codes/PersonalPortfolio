@@ -14,7 +14,7 @@ const projects = [
    {
     title: 'Kaggle Data Science Competition : Binary Rainfall Prediction',
     description: 'Achieved my best Rank of 2072 among ML enthusiasts worldwide in this self-directed project.',
-    image: '/header.png',
+    image: 'https://placehold.co/600x400.png',
     tags: ['React', 'Javascript', 'Python', 'Collab', 'Flask', 'Netlify'],
     liveUrl: 'https://rainfallprediction.netlify.app/',
     repoUrl: 'https://github.com/Yash2004Codes/Rainfall_prediction',
@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'CollegeRooms',
     description: 'A online platform made for students by a student helping them find Hostels/PGs at once place with AI suggestions',
-    image: '/college2.png',
+    image: 'https://placehold.co/600x400.png',
     tags: ['Next.js','TypeScript','Tailwind CSS','Firebase','Gemini API','Netlify'],
     liveUrl: 'https://collegerooms.netlify.app/',
     repoUrl: 'Yash2004Codes/MyRoomate-Hostel-Management',
@@ -32,7 +32,7 @@ const projects = [
   {
     title: 'FeelFree',
     description: 'A online platform where people can share their mental ordeal anonymously and get help from others',
-    image: '/feelfree.png',
+    image: 'https://placehold.co/600x400.png',
     tags: ['Next.js','TypeScript','Tailwind CSS','Firebase','Gemini API','Netlify'],
     liveUrl: 'https://feelfreetotalk.netlify.app/',
     repoUrl: 'https://github.com/Yash2004Codes/Anonymous_Mental_Health_Platform',
