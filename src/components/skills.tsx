@@ -2,12 +2,13 @@
 'use client';
 
 import { SectionHeading } from './section-heading';
-import { Cpu, Code, Wind, Database, BrainCircuit, Bot, CodeXml, GitBranch, Terminal } from 'lucide-react';
+import { Cpu, Code, Wind, Database, BrainCircuit, Bot, CodeXml, GitBranch, Terminal, Sparkles } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 
 const skills = [
   { name: 'React & React Native', icon: <CodeXml className="h-8 w-8" /> },
   { name: 'JavaScript, HTML & CSS', icon: <Code className="h-8 w-8" /> },
+  { name: 'TypeScript', icon: <img src="https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" alt="TypeScript" className="h-8 w-8" /> },
   { name: 'Embedded C', icon: <Cpu className="h-8 w-8" /> },
   { name: 'Python', icon: <img src="https://www.vectorlogo.zone/logos/python/python-icon.svg" alt="Python" className="h-8 w-8"/> },
   { name: 'Machine Learning', icon: <BrainCircuit className="h-8 w-8" /> },
@@ -28,6 +29,7 @@ const skills = [
       </svg>
     ) },
   { name: 'Gemini API', icon: <Bot className="h-8 w-8" /> },
+  { name: 'Prompt Engineering', icon: <Sparkles className="h-8 w-8" /> },
   { name: 'Linux', icon: <Terminal className="h-8 w-8" /> },
 ];
 
