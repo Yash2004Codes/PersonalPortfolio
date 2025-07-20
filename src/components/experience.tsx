@@ -27,6 +27,12 @@ const experiences = [
     description: "Currently building a online platfrom where students can find Hostels/PG etc easily without having tension of paying money to brokers ,saving time & money.Profitable for both students & Room owners",
   },
   {
+    role: "YouTuber",
+    company: "YouTube",
+    period: "Janaury-Present",
+    description:"Started sharing my knowledge on YouTube, my channel name is :YLS Tech TV",
+  },
+  {
     role: "Computer Engineering Student",
     company: "Sardar Patel Institute of Technology (SPIT)",
     period: "2023 - Present",
