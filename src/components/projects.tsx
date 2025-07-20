@@ -13,6 +13,15 @@ import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, Di
 import { GenerateDescriptionForm } from './generate-description-form';
 
 const projects = [
+   {
+    title: 'Kaggle Data Science Competition : Binary Rainfall Prediction',
+    description: 'Achieved my best Rank of 2072 among thousands of ML enthusiasts worldwide in this self-directed project.',
+    image: 'https://placehold.co/600x400.png',
+    tags: ['React', 'Javascript', 'Python', 'Collab', 'Flask', 'Netlify'],
+    liveUrl: 'https://rainfallprediction.netlify.app/',
+    repoUrl: 'https://github.com/Yash2004Codes/Rainfall_prediction',
+    dataAiHint: 'weather forecast',
+  },
   {
     title: 'E-commerce Platform',
     description: 'A full-featured e-commerce website with a modern UI, product management, and secure payments using the latest web technologies.',
