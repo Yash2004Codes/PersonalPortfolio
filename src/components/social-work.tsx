@@ -1,21 +1,24 @@
+
 import { SectionHeading } from './section-heading';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const socialWork = [
   {
-    title: "Community Tech Workshop",
-    organization: "Local Non-Profit",
-    date: "Summer 2023",
-    description: "Volunteered to teach basic web development skills to underprivileged students in the community.",
-    image: "https://placehold.co/600x400.png",
+    title: "YouTuber",
+    organization: "YouTube",
+    date: "Jan 2025",
+    description: "I share my knowledge with others on YouTube.Till now have uploaded 4 videos,Will be uploading more",
+    image: "/YT.png",
+    url: "https://www.youtube.com/@YLSTechTV",
     dataAiHint: "community event"
   },
    {
-    title: "Environmental Cleanup Drive",
-    organization: "Green Planet Initiative",
-    date: "Spring 2023",
-    description: "Participated in a city-wide initiative to clean up local parks and promote recycling awareness.",
+    title: "Voluntering",
+    organization: "Bandra East Community Centre (BECC)",
+    date: "Sep 2024",
+    description: "Voluentered every sunday for 8 weeks to teach Basic Web Devlopment to students",
     image: "https://placehold.co/600x400.png",
     dataAiHint: "nature environment"
   },
@@ -32,18 +35,35 @@ export function SocialWork() {
             <div key={index} className="relative mb-12">
                 <div className="absolute -left-[38px] top-1.5 h-4 w-4 rounded-full bg-primary border-4 border-background" />
                 <div className="pl-4">
-                    <Card>
-                         <div className="aspect-video relative">
-                            <Image src={item.image} alt={item.title} fill objectFit="cover" className="rounded-t-lg" data-ai-hint={item.dataAiHint} />
-                        </div>
-                        <CardHeader>
-                            <CardTitle className="font-headline">{item.title}</CardTitle>
-                            <CardDescription>{item.organization} - {item.date}</CardDescription>
-                        </CardHeader>
-                        <CardContent>
-                           <p className="text-muted-foreground">{item.description}</p>
-                        </CardContent>
-                    </Card>
+                    {item.url ? (
+                      <Link href={item.url} target="_blank" rel="noopener noreferrer" className="block transition-transform transform hover:-translate-y-1 hover:shadow-xl">
+                        <Card>
+                             <div className="aspect-video relative">
+                                <Image src={item.image} alt={item.title} fill objectFit="cover" className="rounded-t-lg" data-ai-hint={item.dataAiHint} />
+                            </div>
+                            <CardHeader>
+                                <CardTitle className="font-headline">{item.title}</CardTitle>
+                                <CardDescription>{item.organization} - {item.date}</CardDescription>
+                            </CardHeader>
+                            <CardContent>
+                               <p className="text-muted-foreground">{item.description}</p>
+                            </CardContent>
+                        </Card>
+                      </Link>
+                    ) : (
+                      <Card>
+                           <div className="aspect-video relative">
+                              <Image src={item.image} alt={item.title} fill objectFit="cover" className="rounded-t-lg" data-ai-hint={item.dataAiHint} />
+                          </div>
+                          <CardHeader>
+                              <CardTitle className="font-headline">{item.title}</CardTitle>
+                              <CardDescription>{item.organization} - {item.date}</CardDescription>
+                          </CardHeader>
+                          <CardContent>
+                             <p className="text-muted-foreground">{item.description}</p>
+                          </CardContent>
+                      </Card>
+                    )}
                 </div>
             </div>
             ))}
