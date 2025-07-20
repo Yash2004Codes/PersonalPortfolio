@@ -32,10 +32,10 @@ const projects = [
   {
     title: 'FeelFree',
     description: 'A online platform where people can share their mental ordeal anonymously and get help from others',
-    image: '',
+    image: '/feelfree.png',
     tags: ['Next.js','TypeScript','Tailwind CSS','Firebase','Gemini API','Netlify'],
-    liveUrl: '#',
-    repoUrl: '',
+    liveUrl: 'https://feelfreetotalk.netlify.app/',
+    repoUrl: 'https://github.com/Yash2004Codes/Anonymous_Mental_Health_Platform',
     dataAiHint: 'analytics chart',
   },
 ];
