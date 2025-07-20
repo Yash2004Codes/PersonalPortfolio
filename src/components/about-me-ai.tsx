@@ -1,14 +1,14 @@
 
 'use client';
 
-import { useFormState, useFormStatus } from 'react-dom';
+import { useActionState, useEffect, useRef, useState } from 'react';
+import { useFormStatus } from 'react-dom';
 import { handleAskAboutMe } from '@/app/actions';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Bot, Send, User, AlertTriangle } from 'lucide-react';
 import { SectionHeading } from './section-heading';
 import { Card, CardContent, CardHeader } from './ui/card';
-import { useEffect, useRef, useState } from 'react';
 
 const initialState = {
   response: '',
@@ -26,7 +26,7 @@ function SubmitButton() {
 }
 
 export function AboutMeAI() {
-    const [state, formAction] = useFormState(handleAskAboutMe, initialState);
+    const [state, formAction] = useActionState(handleAskAboutMe, initialState);
     const [messages, setMessages] = useState<{ type: 'user' | 'ai' | 'error', text: string }[]>([]);
     const formRef = useRef<HTMLFormElement>(null);
 
