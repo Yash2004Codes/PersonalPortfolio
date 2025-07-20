@@ -1,39 +1,37 @@
 
 'use server';
 
-import { generateProjectDescription, type GenerateProjectDescriptionInput } from '@/ai/flows/generate-project-description';
+import { getAboutMeResponse } from '@/ai/flows/about-me-flow';
 import { z } from 'zod';
 
 const formSchema = z.object({
-  projectName: z.string().min(2, "Project name must be at least 2 characters."),
-  projectSummary: z.string().min(10, "Project summary must be at least 10 characters."),
-  technologiesUsed: z.string().min(2, "Please list at least one technology."),
-  impact: z.string().min(10, "Impact description must be at least 10 characters."),
+  question: z.string().min(5, "Question must be at least 5 characters."),
 });
 
 type State = {
-  projectDescription: string;
+  response: string;
   error: string | null;
 };
 
-export async function handleGenerateDescription(prevState: State, formData: GenerateProjectDescriptionInput): Promise<State> {
+export async function handleAskAboutMe(prevState: State, formData: FormData): Promise<State> {
+    const question = formData.get('question');
     try {
-        const validatedData = formSchema.parse(formData);
-        const result = await generateProjectDescription(validatedData);
+        const validatedData = formSchema.parse({ question });
+        const result = await getAboutMeResponse(validatedData.question);
         return {
-            projectDescription: result.projectDescription,
+            response: result,
             error: null,
         };
     } catch (e: unknown) {
         if (e instanceof z.ZodError) {
             return {
-                projectDescription: "",
+                response: "",
                 error: e.errors.map(err => err.message).join(', ')
             };
         }
         console.error(e);
         return {
-            projectDescription: "",
+            response: "",
             error: 'An unexpected error occurred. Please try again.',
         };
     }

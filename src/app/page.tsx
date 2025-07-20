@@ -1,5 +1,6 @@
 import { Header } from '@/components/header';
 import { Hero } from '@/components/hero';
+import { AboutMeAI } from '@/components/about-me-ai';
 import { Projects } from '@/components/projects';
 import { Skills } from '@/components/skills';
 import { Experience } from '@/components/experience';
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <main className="flex-1">
         <Hero />
+        <AboutMeAI />
         <Projects />
         <Skills />
         <Experience />
