@@ -15,7 +15,18 @@ const skills = [
   { name: 'Firebase', icon: <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="Firebase" className="h-8 w-8" />},
   { name: 'Tailwind CSS', icon: <Wind className="h-8 w-8" /> },
   { name: 'Git & GitHub', icon: <GitBranch className="h-8 w-8" /> },
-  { name: 'Flask', icon: <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="Flask" className="h-8 w-8"/> },
+  { name: 'Flask', icon: (
+      <svg
+        role="img"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        className="h-8 w-8"
+        fill="currentColor"
+      >
+        <title>Flask</title>
+        <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.633 16.32a.75.75 0 0 1-.75-.75c0-1.26-.504-2.52-1.427-3.483-1.492-1.554-3.1-2.483-3.1-4.108V6.75a.75.75 0 0 1 1.5 0v1.229c0 .762.59 1.455 1.771 2.528 1.492 1.554 3.1 2.483 3.1 4.108a.75.75 0 0 1-.694.705zM9.75 6.75a.75.75 0 0 1 .75-.75h1.5a.75.75 0 0 1 0 1.5h-1.5a.75.75 0 0 1-.75-.75zm-3 7.5a.75.75 0 0 1 .75.75c0 1.26.504 2.52 1.427 3.483C10.42 19.975 12 20.903 12 22.528v1.222a.75.75 0 0 1-1.5 0v-1.23c0-.762-.59-1.455-1.771-2.527C7.237 18.442 5.75 17.514 5.75 15.9a.75.75 0 0 1 .75-.75z" />
+      </svg>
+    ) },
   { name: 'Gemini API', icon: <Bot className="h-8 w-8" /> },
   { name: 'Linux', icon: <Terminal className="h-8 w-8" /> },
 ];
