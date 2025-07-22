@@ -12,7 +12,7 @@ const profiles = [
     username: "peaceful_WarriorYash",
     url: "https://codeforces.com/profile/peaceful_warriorYash",
     stats: "max rated:876",
-    icon: "https://placehold.co/150x150.png",
+    icon: "/library/codeforces.png",
     dataAiHint: "code abstract",
   },
    {
@@ -20,7 +20,7 @@ const profiles = [
     username: "yashjivdn1",
     url: "https://www.geeksforgeeks.org/user/yashjivdn1/",
     stats: "solved 70+ problems",
-    icon: "https://placehold.co/150x150.png",
+    icon: "/library/gfg.png",
     dataAiHint: "code lines",
   }
 ];

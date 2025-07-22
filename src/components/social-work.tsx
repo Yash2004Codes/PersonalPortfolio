@@ -10,7 +10,7 @@ const socialWork = [
     organization: "YouTube",
     date: "Jan 2025",
     description: "I share my knowledge with others on YouTube.Till now have uploaded 4 videos,Will be uploading more.click on the image to get to my channel",
-    image: "https://placehold.co/600x400.png",
+    image: "/library/youtube.png",
     url: "https://www.youtube.com/@yashsharma-n3w7z",
     dataAiHint: "community event"
   },
