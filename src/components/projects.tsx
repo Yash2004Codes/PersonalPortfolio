@@ -14,7 +14,7 @@ const projects = [
    {
     title: 'Kaggle Data Science Competition : Binary Rainfall Prediction',
     description: 'Achieved my best Rank of 2072 among ML enthusiasts worldwide in this self-directed project.',
-    image: '/library/kaggle.png',
+    image: '/kaggle.png',
     tags: ['React', 'Javascript', 'Python', 'Collab', 'Flask', 'Netlify'],
     liveUrl: 'https://rainfallprediction.netlify.app/',
     repoUrl: 'https://github.com/Yash2004Codes/Rainfall_prediction',
@@ -23,7 +23,7 @@ const projects = [
   {
     title: 'CollegeRooms',
     description: 'A online platform made for students by a student helping them find Hostels/PGs at once place with AI suggestions',
-    image:'/library/collegerooms.png',
+    image:'/collegerooms.png',
     tags: ['Next.js','TypeScript','Tailwind CSS','Firebase','Gemini API','Netlify'],
     liveUrl: 'https://collegerooms.netlify.app/',
     repoUrl: 'Yash2004Codes/MyRoomate-Hostel-Management',
@@ -32,7 +32,7 @@ const projects = [
   {
     title: 'FeelFree',
     description: 'A online platform where people can share their mental ordeal anonymously and get help from others',
-    image: '/library/feelfree.png',
+    image: '/feelfree.png',
     tags: ['Next.js','TypeScript','Tailwind CSS','Firebase','Gemini API','Netlify'],
     liveUrl: 'https://feelfreetotalk.netlify.app/',
     repoUrl: 'https://github.com/Yash2004Codes/Anonymous_Mental_Health_Platform',
@@ -50,7 +50,7 @@ export function Projects() {
                     <Card key={project.title} className="flex flex-col overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl">
                       <CardHeader>
                         <div className="aspect-video relative mb-4">
-                           <Image src={project.image || '/library/placeholder.png'} alt={project.title} fill objectFit="cover" className="rounded-t-lg" data-ai-hint={project.dataAiHint} />
+                           <Image src={project.image || '/placeholder.png'} alt={project.title} fill objectFit="cover" className="rounded-t-lg" data-ai-hint={project.dataAiHint} />
                         </div>
                         <CardTitle className="font-headline text-2xl">{project.title}</CardTitle>
                         <CardDescription>
