@@ -50,7 +50,7 @@ export function Projects() {
                     <Card key={project.title} className="flex flex-col overflow-hidden transition-transform transform hover:-translate-y-1 hover:shadow-xl">
                       <CardHeader>
                         <div className="aspect-video relative mb-4">
-                           <Image src={project.image || `https://placehold.co/600x400.png?text=${project.title.replace(' ', '+')}`} alt={project.title} fill objectFit="cover" className="rounded-t-lg" data-ai-hint={project.dataAiHint} />
+                           <Image src={project.image || 'https://placehold.co/600x400.png'} alt={project.title} fill objectFit="cover" className="rounded-t-lg" data-ai-hint={project.dataAiHint} />
                         </div>
                         <CardTitle className="font-headline text-2xl">{project.title}</CardTitle>
                         <CardDescription>

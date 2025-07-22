@@ -1,3 +1,4 @@
+
 import { SectionHeading } from './section-heading';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Button } from './ui/button';
@@ -11,14 +12,16 @@ const profiles = [
     username: "peaceful_WarriorYash",
     url: "https://codeforces.com/profile/peaceful_warriorYash",
     stats: "max rated:876",
-    icon: "https://placehold.co/150x150.png"
+    icon: "https://placehold.co/150x150.png",
+    dataAiHint: "code abstract",
   },
    {
     platform: "GfG",
     username: "yashjivdn1",
     url: "https://www.geeksforgeeks.org/user/yashjivdn1/",
     stats: "solved 70+ problems",
-    icon: "https://placehold.co/150x150.png"
+    icon: "https://placehold.co/150x150.png",
+    dataAiHint: "code lines",
   }
 ];
 
@@ -32,7 +35,7 @@ export function CompetitiveProgramming() {
              <Card key={index} className="flex flex-col text-center items-center justify-center p-6 hover:shadow-lg hover:-translate-y-1 transition-transform duration-200">
                 <CardHeader className="flex flex-col items-center">
                     <div className="mb-4">
-                      <Image src={profile.icon} alt={`${profile.platform} logo`} width={150} height={150} className="h-20 w-20 object-contain" />
+                      <Image src={profile.icon} alt={`${profile.platform} logo`} width={80} height={80} className="h-20 w-20 object-contain" data-ai-hint={profile.dataAiHint} />
                     </div>
                     <CardTitle className="font-headline">{profile.platform}</CardTitle>
                 </CardHeader>
