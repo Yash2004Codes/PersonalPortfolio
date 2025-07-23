@@ -5,7 +5,7 @@ const experiences = [
   {
     role: "Embedded C Software Developer Intern",
     company: "Smowcode",
-    period: "May-Present",
+    period: "May-July",
     description: "Worked on creating application level libraries for UART & DMA in Embedded C for STM32 MCU",
   },
    {
