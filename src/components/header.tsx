@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import { Button } from "./ui/button";
-import { Menu, UserCircle } from "lucide-react";
+import { Menu } from "lucide-react";
 
 const navLinks = [
   { href: "#projects", label: "Projects" },
@@ -19,7 +19,6 @@ export function Header() {
       <div className="container flex h-16 items-center">
         <div className="mr-auto flex items-center">
           <Link href="/" className="mr-6 flex items-center space-x-2">
-            <UserCircle className="h-7 w-7 text-primary" />
             <span className="font-bold text-lg font-headline">Yash Lalit Sharma</span>
           </Link>
         </div>
